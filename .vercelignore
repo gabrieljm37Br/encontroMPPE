@@ -1,3 +1,7 @@
 .git
+.gitignore
 README.md
+DEPLOY.md
 node_modules
+*.log
+.DS_Store

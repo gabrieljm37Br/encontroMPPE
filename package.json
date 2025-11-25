@@ -4,15 +4,16 @@
     "description": "Apresentação Interinstitucional MPPE/PCPE - Central de Inquéritos da Capital",
     "main": "index.html",
     "scripts": {
-        "dev": "npx serve .",
-        "build": "echo 'Static site - no build needed'",
-        "start": "npx serve ."
+        "dev": "npx serve . -p 3000",
+        "start": "npx serve . -p 3000",
+        "preview": "npx serve . -p 8080"
     },
     "keywords": [
         "presentation",
         "mppe",
-        "pcpe"
+        "pcpe",
+        "slides"
     ],
-    "author": "",
+    "author": "Central de Inquéritos da Capital",
     "license": "ISC"
 }
