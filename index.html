@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontro Interinstitucional MPPE/PCPE</title>
-    <meta name="description" content="Apresentação profissional do Encontro Interinstitucional entre Ministério Público de Pernambuco e Polícia Civil de Pernambuco">
+    <meta name="description"
+        content="Apresentação profissional do Encontro Interinstitucional entre Ministério Público de Pernambuco e Polícia Civil de Pernambuco">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="presentation-container">
         <div class="navigation-controls">
@@ -21,6 +26,13 @@
             <div class="slide-counter">
                 <span id="currentSlide">1</span> / <span id="totalSlides">12</span>
             </div>
+            <button id="fullscreenBtn" class="nav-btn" aria-label="Tela cheia" title="Tela cheia (F)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                    </path>
+                </svg>
+            </button>
             <button id="nextBtn" class="nav-btn" aria-label="Próximo slide">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 18 15 12 9 6"></polyline>
@@ -32,10 +44,15 @@
             <div class="progress-fill" id="progressFill"></div>
         </div>
 
+        <div class="slide-header-branding">
+            <span>Central de Inquéritos da Capital</span>
+        </div>
+
         <div class="slides-wrapper" id="slidesWrapper"></div>
     </div>
 
     <script src="slides-content.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

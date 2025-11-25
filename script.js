@@ -8,35 +8,52 @@ const currentSlideEl = document.getElementById('currentSlide');
 const progressFill = document.getElementById('progressFill');
 
 function updateSlide(newSlide) {
-    if (newSlide < 1 || newSlide > totalSlides) return;
+    // Circular navigation: wrap around if out of bounds
+    if (newSlide < 1) {
+        newSlide = totalSlides;
+    } else if (newSlide > totalSlides) {
+        newSlide = 1;
+    }
+
+    // Don't do anything if we're already on this slide
+    if (newSlide === currentSlide) return;
 
     const slides = document.querySelectorAll('.slide');
     const oldSlide = currentSlide;
+    const direction = newSlide > oldSlide ? 'forward' : 'backward';
 
+    // Remove active from old slide
     slides[oldSlide - 1].classList.remove('active');
-    slides[oldSlide - 1].classList.add(newSlide > oldSlide ? 'prev' : '');
 
+    // Add transition class based on direction
+    if (direction === 'forward') {
+        slides[oldSlide - 1].classList.add('prev');
+    }
+
+    // Clean up old slide after animation
     setTimeout(() => {
         slides[oldSlide - 1].classList.remove('prev');
     }, 500);
 
+    // Activate new slide
     slides[newSlide - 1].classList.add('active');
 
+    // Update current slide number
     currentSlide = newSlide;
     currentSlideEl.textContent = currentSlide;
 
+    // Update progress bar
     const progress = (currentSlide / totalSlides) * 100;
     progressFill.style.width = `${progress}%`;
-
-    prevBtn.disabled = currentSlide === 1;
-    nextBtn.disabled = currentSlide === totalSlides;
 }
 
 prevBtn.addEventListener('click', () => {
+    console.log('Previous button clicked. Current slide:', currentSlide, '-> Going to:', currentSlide - 1);
     updateSlide(currentSlide - 1);
 });
 
 nextBtn.addEventListener('click', () => {
+    console.log('Next button clicked. Current slide:', currentSlide, '-> Going to:', currentSlide + 1);
     updateSlide(currentSlide + 1);
 });
 
@@ -50,8 +67,43 @@ document.addEventListener('keydown', (e) => {
         updateSlide(1);
     } else if (e.key === 'End') {
         updateSlide(totalSlides);
+    } else if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
     }
 });
+
+// Fullscreen functionality
+const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.log(`Erro ao entrar em tela cheia: ${err.message}`);
+        });
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
+
+function updateFullscreenButton() {
+    const isFullscreen = !!document.fullscreenElement;
+    fullscreenBtn.innerHTML = isFullscreen
+        ? `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+             <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+           </svg>`
+        : `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+             <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+           </svg>`;
+    fullscreenBtn.setAttribute('aria-label', isFullscreen ? 'Sair da tela cheia' : 'Tela cheia');
+    fullscreenBtn.setAttribute('title', isFullscreen ? 'Sair da tela cheia (F)' : 'Tela cheia (F)');
+}
+
+fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+document.addEventListener('fullscreenchange', updateFullscreenButton);
 
 let touchStartX = 0;
 let touchEndX = 0;
@@ -75,7 +127,6 @@ function handleSwipe() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    prevBtn.disabled = true;
     const totalSlidesEl = document.getElementById('totalSlides');
     totalSlidesEl.textContent = totalSlides;
 });

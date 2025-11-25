@@ -6,9 +6,9 @@ const slidesData = [
             <div class="slide-content title-slide">
                 <div class="title-content">
                     <div class="logo-container">
-                        <div class="logo-badge">MPPE</div>
+                        <img src="image/logo_MPPE.svg" alt="Ministério Público de Pernambuco" class="institution-logo">
                         <div class="logo-divider"></div>
-                        <div class="logo-badge">PCPE</div>
+                        <img src="image/logo_PCPE.svg" alt="Polícia Civil de Pernambuco" class="institution-logo">
                     </div>
                     <h1 class="main-title">Encontro Interinstitucional</h1>
                     <h2 class="subtitle">MPPE / PCPE</h2>

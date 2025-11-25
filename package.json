@@ -1,0 +1,18 @@
+{
+    "name": "encontro-mppe-pcpe",
+    "version": "1.0.0",
+    "description": "Apresentação Interinstitucional MPPE/PCPE - Central de Inquéritos da Capital",
+    "main": "index.html",
+    "scripts": {
+        "dev": "npx serve .",
+        "build": "echo 'Static site - no build needed'",
+        "start": "npx serve ."
+    },
+    "keywords": [
+        "presentation",
+        "mppe",
+        "pcpe"
+    ],
+    "author": "",
+    "license": "ISC"
+}
