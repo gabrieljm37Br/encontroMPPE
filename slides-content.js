@@ -6,9 +6,9 @@ const slidesData = [
             <div class="slide-content title-slide">
                 <div class="title-content">
                     <div class="logo-container">
-                        <img src="image/logo_MPPE.svg" alt="Ministério Público de Pernambuco" class="institution-logo">
+                        <img src="./image/logo_MPPE.svg" alt="Ministério Público de Pernambuco" class="institution-logo">
                         <div class="logo-divider"></div>
-                        <img src="image/logo_PCPE.svg" alt="Polícia Civil de Pernambuco" class="institution-logo">
+                        <img src="./image/logo_PCPE.svg" alt="Polícia Civil de Pernambuco" class="institution-logo">
                     </div>
                     <h1 class="main-title">Encontro Interinstitucional</h1>
                     <h2 class="subtitle">MPPE / PCPE</h2>
@@ -485,3 +485,4 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.appendChild(section);
     });
 });
+
