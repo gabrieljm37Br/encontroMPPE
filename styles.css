@@ -903,6 +903,56 @@ body {
     font-weight: 600;
 }
 
+.comm-partners-detailed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partner-detail {
+    background: var(--cinza-claro);
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 4px solid var(--azul-marinho);
+    transition: all 0.3s ease;
+}
+
+.partner-detail:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.partner-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--azul-marinho);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.partner-channels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.partner-channels li {
+    background: var(--branco);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    border-left: 3px solid var(--vermelho);
+}
+
+
 .conclusion-box {
     background: var(--cinza-claro);
     padding: 24px;

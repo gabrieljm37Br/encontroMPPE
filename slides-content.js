@@ -264,22 +264,56 @@ const slidesData = [
                     </div>
                     <div class="communication-section">
                         <h3>Comunicação Externa</h3>
-                        <div class="comm-partners">
-                            <div class="partner-badge">Polícia Civil</div>
-                            <div class="partner-badge">TJPE</div>
-                            <div class="partner-badge">Corregedorias SDS</div>
-                            <div class="partner-badge">CEAPA</div>
-                            <div class="partner-badge">PGJ e CGMP</div>
+                        <div class="comm-partners-detailed">
+                            <div class="partner-detail">
+                                <div class="partner-name">Polícia Civil</div>
+                                <ul class="partner-channels">
+                                    <li>SEI</li>
+                                    <li>SIM</li>
+                                    <li>E-MAIL</li>
+                                </ul>
+                            </div>
+                            <div class="partner-detail">
+                                <div class="partner-name">TJPE</div>
+                                <ul class="partner-channels">
+                                    <li>SEI</li>
+                                    <li>SIM</li>
+                                    <li>E-MAIL</li>
+                                    <li>Dje</li>
+                                </ul>
+                            </div>
+                            <div class="partner-detail">
+                                <div class="partner-name">SDS</div>
+                                <ul class="partner-channels">
+                                    <li>SEI</li>
+                                    <li>SIM</li>
+                                    <li>E-MAIL</li>
+                                </ul>
+                            </div>
+                            <div class="partner-detail">
+                                <div class="partner-name">CIAP</div>
+                                <ul class="partner-channels">
+                                    <li>E-MAIL</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="conclusion-box">
                         <h3>Importância do Controle</h3>
                         <p>Essencial para evitar <strong>nulidades</strong>, <strong>ilegalidades</strong> e <strong>prescrição</strong></p>
                     </div>
-                    <div class="final-message">
-                        <h2>Juntos por uma Justiça Criminal mais Eficiente</h2>
-                        <p>MPPE • PCPE</p>
-                    </div>
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 9,
+        html: `
+            <div class="slide-content title-slide">
+                <div class="title-content">
+                    <h1 class="main-title" style="font-size: 3.5rem; margin-bottom: 2rem;">Juntos por uma Justiça Criminal mais Eficiente</h1>
+                    <div class="title-decoration"></div>
+                    <p class="title-description" style="font-size: 2rem; font-weight: 600;">MPPE • PCPE</p>
                 </div>
             </div>
         `
