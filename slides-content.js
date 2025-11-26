@@ -465,15 +465,28 @@ const slidesData = [
                 <h2 class="slide-title">Contatos - Central de Inqueritos da Capital</h2>
                 <div class="content-box contact-box">
                     <div class="contact-text">
-                        <p class="lead-text">Escaneie o QR code para acessar a pagina com telefone e e-mails da Central de Inqueritos da Capital.</p>
-                        <ul>
-                            <li>Telefone institucional da CIC</li>
-                            <li>E-mails oficiais para expedientes e diligencias</li>
-                        </ul>
+                        <span class="contact-chip">Canais de atendimento</span>
+                        <p class="lead-text">Escaneie o QR code para acessar a pagina com telefone e e-mails oficiais da Central de Inqueritos da Capital.</p>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <span class="contact-dot"></span>
+                                <span>Telefone institucional</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-dot"></span>
+                                <span>E-mails para expedientes e diligências</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-dot"></span>
+                                <span>Orientacoes gerais</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="qr-wrapper">
-                        <img src="./image/contatos_cinq.svg" alt="QR code de contato da Central de Inqueritos da Capital" class="qr-code">
-                        <p class="qr-caption">Aponte a camera do celular para abrir a pagina de contatos.</p>
+                        <div class="qr-card">
+                            <img src="./image/contatos_cinq.svg" alt="QR code de contato da Central de Inqueritos da Capital" class="qr-code">
+                            <p class="qr-caption">Aponte a camera do celular para abrir a pagina de contatos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
