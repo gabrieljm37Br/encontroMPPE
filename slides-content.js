@@ -457,6 +457,27 @@ const slidesData = [
                 </div>
             </div>
         `
+    },
+    {
+        id: 12,
+        html: `
+            <div class="slide-content contact-slide">
+                <h2 class="slide-title">Contatos - Central de Inqueritos da Capital</h2>
+                <div class="content-box contact-box">
+                    <div class="contact-text">
+                        <p class="lead-text">Escaneie o QR code para acessar a pagina com telefone e e-mails da Central de Inqueritos da Capital.</p>
+                        <ul>
+                            <li>Telefone institucional da CIC</li>
+                            <li>E-mails oficiais para expedientes e diligencias</li>
+                        </ul>
+                    </div>
+                    <div class="qr-wrapper">
+                        <img src="./image/contatos_cinq.svg" alt="QR code de contato da Central de Inqueritos da Capital" class="qr-code">
+                        <p class="qr-caption">Aponte a camera do celular para abrir a pagina de contatos.</p>
+                    </div>
+                </div>
+            </div>
+        `
     }
 ];
 
