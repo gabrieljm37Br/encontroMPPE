@@ -305,7 +305,7 @@ const slidesData = [
         id: 8,
         html: `
             <div class="slide-content">
-                <h2 class="slide-title">Fluxo de Procedimentos na CIC</h2>
+                <h2 class="slide-title">Fluxo de Procedimentos na CInq</h2>
                 <div class="content-box">
                     <div class="flow-steps">
                         <div class="flow-step">
