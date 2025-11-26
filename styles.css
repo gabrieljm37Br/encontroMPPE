@@ -1624,9 +1624,33 @@ body {
     .contact-box {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 28px 22px;
+        gap: 24px;
     }
 
     .contact-item {
         justify-content: center;
+    }
+
+    .qr-code {
+        width: 180px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-box {
+        padding: 22px 18px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .contact-chip {
+        font-size: 13px;
+    }
+
+    .lead-text {
+        font-size: 18px;
     }
 }
