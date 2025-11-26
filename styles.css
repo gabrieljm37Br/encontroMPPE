@@ -114,6 +114,7 @@ body {
 
 .slide-header-branding {
     position: fixed;
+    top: auto;
     bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
@@ -155,7 +156,8 @@ body {
     }
 
     .slide-header-branding {
-        bottom: 70px;
+        top: auto;
+        bottom: 74px;
         font-size: 12px;
     }
 
