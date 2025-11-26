@@ -485,7 +485,7 @@ const slidesData = [
                     <div class="qr-wrapper">
                         <div class="qr-card">
                             <img src="./image/contatos_cinq.svg" alt="QR code de contato da Central de Inqueritos da Capital" class="qr-code">
-                            <p class="qr-caption">Aponte a camera do celular para abrir a pagina de contatos.</p>
+                            <p class="qr-caption">Aponte a câmera do celular para abrir a página de contatos.</p>
                         </div>
                     </div>
                 </div>
