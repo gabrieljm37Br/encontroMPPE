@@ -360,39 +360,29 @@ const slidesData = [
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Núcleos - NPP e NANPP</h2>
-                <div class="content-box">
-                    <div class="nucleos-container">
-                        <div class="nucleo-box npp">
-                            <div class="nucleo-header">
-                                <h3>NPP - Núcleo de Persecução Penal</h3>
-                            </div>
-                            <div class="nucleo-content">
-                                <p class="nucleo-focus">Foco: <strong>Denúncia Tradicional</strong></p>
-                                <h4>Análise Técnica:</h4>
-                                <ul>
-                                    <li>Requisição de diligências</li>
-                                    <li>Preparação de denúncia</li>
-                                    <li>Avaliação de medidas cautelares</li>
-                                    <li>Interação com Judiciário</li>
-                                </ul>
-                            </div>
+                <div class="content-box nuclei-grid">
+                    <div class="nucleus-card npp-card">
+                        <div class="nucleus-header">
+                            <span class="nucleus-badge">Núcleo de Persecução Penal (NPP)</span>
+                            <p class="nucleus-sub">Foco: denúncia tradicional</p>
                         </div>
-                        <div class="nucleo-box nanpp">
-                            <div class="nucleo-header">
-                                <h3>NANPP - Acordo de Não Persecução Penal</h3>
-                            </div>
-                            <div class="nucleo-content">
-                                <p class="nucleo-focus">Foco: <strong>Função Consensual</strong></p>
-                                <h4>Funções:</h4>
-                                <ul>
-                                    <li>Identificar casos cabíveis</li>
-                                    <li>Realizar audiência de ANPP</li>
-                                    <li>Elaborar petição de homologação</li>
-                                    <li>Acompanhar cumprimento</li>
-                                    <li>Informar cumprimento/descumprimento</li>
-                                </ul>
-                            </div>
+                        <ul class="nucleus-list">
+                            <li>Requisição de diligências</li>
+                            <li>Oferecimento da denúncia</li>
+                            <li>Pedido de arquivamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="nucleus-card nanpp-card">
+                        <div class="nucleus-header">
+                            <span class="nucleus-badge">Núcleo de Acordo de Não Persecução Penal (NANPP)</span>
+                            <p class="nucleus-sub">Foco: função consensual</p>
                         </div>
+                        <ul class="nucleus-list">
+                            <li>Audiência de ANPP</li>
+                            <li>Petição de homologação</li>
+                            <li>Acompanhamento do cumprimento</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -1465,3 +1465,77 @@ body {
     line-height: 1.6;
     color: #444;
 }
+
+/* Slide 9 - Mindmap cards */
+.nuclei-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 24px;
+}
+
+.nucleus-card {
+    background: #fdfdfd;
+    border: 1px solid rgba(0, 32, 63, 0.08);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nucleus-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nucleus-badge {
+    display: inline-block;
+    padding: 10px 14px;
+    background: var(--branco);
+    border-radius: 12px;
+    font-weight: 700;
+    color: var(--azul-marinho);
+    border: 2px solid var(--vermelho);
+    box-shadow: var(--shadow-sm);
+}
+
+.nucleus-sub {
+    font-size: 14px;
+    color: #555;
+}
+
+.nucleus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.nucleus-list li {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px dashed var(--cinza-claro);
+    background: #fff;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.npp-card .nucleus-badge {
+    border-color: #ff6b6b;
+}
+
+.npp-card .nucleus-list li {
+    border-color: rgba(255, 107, 107, 0.5);
+}
+
+.nanpp-card .nucleus-badge {
+    border-color: #ffa45a;
+}
+
+.nanpp-card .nucleus-list li {
+    border-color: rgba(255, 164, 90, 0.5);
+}
