@@ -118,193 +118,6 @@ const slidesData = [
         id: 5,
         html: `
             <div class="slide-content">
-                <h2 class="slide-title">O que é a Fase Pré-Processual?</h2>
-                <div class="content-box">
-                    <div class="definition-box">
-                        <p class="lead-text">Momento <strong>anterior ao oferecimento da denúncia</strong>, desenvolvido por meio de:</p>
-                        <div class="methods">
-                            <div class="method-badge">Inquérito Policial</div>
-                            <div class="method-badge">Peças de Informação</div>
-                        </div>
-                    </div>
-                    <div class="importance-section">
-                        <h3>Por que ela importa?</h3>
-                        <div class="importance-grid">
-                            <div class="importance-item">
-                                <span class="importance-label">Formação da Opinio Delicti</span>
-                                <p>Construção da convicção mínima necessária para atuação do MP</p>
-                            </div>
-                            <div class="importance-item">
-                                <span class="importance-label">Decisões Possíveis</span>
-                                <ul>
-                                    <li>Oferecer denúncia</li>
-                                    <li>Propor ANPP</li>
-                                    <li>Requerer diligências</li>
-                                    <li>Promover arquivamento</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="highlight-box">
-                        <p><strong>Objetivo Central:</strong> Verificar se existem elementos mínimos de autoria e materialidade que justifiquem submeter alguém a um processo penal.</p>
-                    </div>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 6,
-        html: `
-            <div class="slide-content">
-                <h2 class="slide-title">Fundamentação Constitucional e Legal</h2>
-                <div class="content-box">
-                    <div class="legal-section">
-                        <h3 class="legal-title">Constituição Federal (art. 129)</h3>
-                        <div class="legal-items">
-                            <div class="legal-item">
-                                <span class="legal-article">Art. 129, I</span>
-                                <p>Promover, privativamente, a ação penal pública</p>
-                            </div>
-                            <div class="legal-item">
-                                <span class="legal-article">Art. 129, VII</span>
-                                <p>Exercer o controle externo da atividade policial</p>
-                            </div>
-                            <div class="legal-item">
-                                <span class="legal-article">Art. 129, VI e VIII</span>
-                                <p>Expedir notificações; requisitar diligências investigatórias e instauração de inquérito</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="legal-section">
-                        <h3 class="legal-title">Código de Processo Penal</h3>
-                        <div class="cpp-grid">
-                            <div class="cpp-item">Art. 5º, II - Requisição de inquérito</div>
-                            <div class="cpp-item">Art. 13, II e III - Requisição de diligências</div>
-                            <div class="cpp-item">Art. 16 - Diligências complementares</div>
-                            <div class="cpp-item">Art. 28 - Arquivamento</div>
-                            <div class="cpp-item">Arts. 282, 311, 312, 319 - Medidas cautelares</div>
-                            <div class="cpp-item">Art. 28-A - ANPP</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 7,
-        html: `
-            <div class="slide-content">
-                <h2 class="slide-title">Objetivos da Atuação do MP</h2>
-                <div class="content-box">
-                    <div class="objectives-detailed">
-                        <div class="objective-detailed">
-                            <div class="objective-header">
-                                <span class="objective-number">1</span>
-                                <h3>Garantir Justa Causa</h3>
-                            </div>
-                            <ul>
-                                <li>Materialidade do delito</li>
-                                <li>Indícios suficientes de autoria</li>
-                                <li>Adequação típica</li>
-                            </ul>
-                        </div>
-                        <div class="objective-detailed">
-                            <div class="objective-header">
-                                <span class="objective-number">2</span>
-                                <h3>Filtrar Casos</h3>
-                            </div>
-                            <ul>
-                                <li>Evitar processos desnecessários</li>
-                                <li>Direcionar para soluções negociadas</li>
-                                <li>Priorizar situações graves</li>
-                            </ul>
-                        </div>
-                        <div class="objective-detailed">
-                            <div class="objective-header">
-                                <span class="objective-number">3</span>
-                                <h3>Proteger Direitos</h3>
-                            </div>
-                            <ul>
-                                <li>Legalidade das prisões</li>
-                                <li>Licitude das provas</li>
-                                <li>Proteção de vítimas</li>
-                                <li>Proporcionalidade</li>
-                            </ul>
-                        </div>
-                        <div class="objective-detailed">
-                            <div class="objective-header">
-                                <span class="objective-number">4</span>
-                                <h3>Assegurar Efetividade</h3>
-                            </div>
-                            <ul>
-                                <li>Medidas cautelares adequadas</li>
-                                <li>Preservação de vestígios</li>
-                                <li>Garantia de reparação</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 8,
-        html: `
-            <div class="slide-content">
-                <h2 class="slide-title">Principais Atos do MP</h2>
-                <div class="content-box">
-                    <div class="acts-timeline">
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Análise de Comunicações de Prisão</h3>
-                                <p>Verificação da legalidade, conversão em preventiva ou liberdade provisória</p>
-                            </div>
-                        </div>
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Requisição de Inquérito</h3>
-                                <p>Instauração de procedimentos investigatórios e coleta de documentos</p>
-                            </div>
-                        </div>
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Requisição de Diligências</h3>
-                                <p>Oitivas, perícias, buscas, quebras de sigilo</p>
-                            </div>
-                        </div>
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Medidas Cautelares</h3>
-                                <p>Prisões, medidas alternativas e medidas reais</p>
-                            </div>
-                        </div>
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Proposta de ANPP</h3>
-                                <p>Acordo de Não Persecução Penal</p>
-                            </div>
-                        </div>
-                        <div class="act-item">
-                            <div class="act-marker"></div>
-                            <div class="act-content">
-                                <h3>Decisão Final</h3>
-                                <p>Denúncia, arquivamento, ANPP ou novas diligências</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 9,
-        html: `
-            <div class="slide-content">
                 <h2 class="slide-title">Centrais de Inquérito - MPPE</h2>
                 <div class="content-box">
                     <div class="cic-intro">
@@ -332,14 +145,14 @@ const slidesData = [
                         </div>
                     </div>
                     <div class="cic-highlight">
-                        <p><strong>Coração Operacional:</strong> Centro da atuação pré-processual do MP na Capital</p>
+                        <p><strong>Coração Operacional:</strong> As Centrais de Inquéritos são o centro da atuação pré-processual do MPPE.</p>
                     </div>
                 </div>
             </div>
         `
     },
     {
-        id: 10,
+        id: 6,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Fluxo de Procedimentos na CIC</h2>
@@ -355,7 +168,7 @@ const slidesData = [
                                 <ul>
                                     <li>Comunicações de prisão em flagrante</li>
                                     <li>Autos de inquérito, TCO, peças de informação</li>
-                                    <li>Integração via PJe, SIM, Consensus</li>
+                                    <li>Integração via PJe, SIM, Consensus, E-mail</li>
                                 </ul>
                             </div>
                         </div>
@@ -367,7 +180,7 @@ const slidesData = [
                             <div class="step-content">
                                 <p><strong>Objetivo:</strong> Classificar e qualificar cada procedimento</p>
                                 <ul>
-                                    <li>Verificação de competência</li>
+                                    <li>Verificação de atribuição</li>
                                     <li>Completude de dados</li>
                                     <li>Status do investigado (preso/solto)</li>
                                     <li>Verificação de prevenção</li>
@@ -393,7 +206,7 @@ const slidesData = [
         `
     },
     {
-        id: 11,
+        id: 7,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Núcleos - NPP e NANPP</h2>
@@ -405,9 +218,8 @@ const slidesData = [
                             </div>
                             <div class="nucleo-content">
                                 <p class="nucleo-focus">Foco: <strong>Denúncia Tradicional</strong></p>
-                                <h4>Funções:</h4>
+                                <h4>Análise Técnica:</h4>
                                 <ul>
-                                    <li>Análise técnica do inquérito</li>
                                     <li>Requisição de diligências</li>
                                     <li>Preparação de denúncia</li>
                                     <li>Avaliação de medidas cautelares</li>
@@ -437,7 +249,7 @@ const slidesData = [
         `
     },
     {
-        id: 12,
+        id: 8,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Controle e Comunicação</h2>
