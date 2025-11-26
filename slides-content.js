@@ -453,7 +453,7 @@ const slidesData = [
                 <div class="title-content">
                     <h1 class="main-title" style="font-size: 3.5rem; margin-bottom: 2rem;">Juntos por uma Justiça Criminal mais Eficiente</h1>
                     <div class="title-decoration"></div>
-                    <p class="title-description" style="font-size: 2rem; font-weight: 600;">MPPE × PCPE</p>
+                    <p class="title-description" style="font-size: 2rem; font-weight: 600;">MPPE | PCPE</p>
                 </div>
             </div>
         `
