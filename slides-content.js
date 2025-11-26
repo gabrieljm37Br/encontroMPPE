@@ -21,67 +21,96 @@ const slidesData = [
     {
         id: 2,
         html: `
-            <div class="slide-content">
-                <h2 class="slide-title">Dados da Central de Inquéritos da Capital</h2>
-                <div class="content-box">
-                    <div class="stats-period">
-                        <p>📊 Período: <strong>01/01/2025 a 25/11/2025</strong></p>
+            <div class="slide-content infographic-slide">
+                <div class="infographic-header">
+                    <div class="infographic-title-block">
+                        <span class="eyebrow">Infográfico operacional</span>
+                        <h2 class="slide-title slim-title">Dados da Central de Inquéritos da Capital</h2>
+                        <p class="infographic-sub">Panorama do volume recebido, conversão em denúncia e status dos requisitórios.</p>
                     </div>
-                    
-                    <div class="stats-highlight-grid">
-                        <div class="stat-highlight primary">
-                            <div class="stat-icon">📁</div>
-                            <div class="stat-number">10.957</div>
-                            <div class="stat-label">Inquéritos Movimentados</div>
+                    <div class="period-chip">
+                        <span class="chip-label">Período</span>
+                        <span class="chip-value">01/01/2025 a 25/11/2025</span>
+                    </div>
+                </div>
+
+                <div class="infographic-grid">
+                    <div class="infographic-hero">
+                        <div class="hero-circle">
+                            <span class="hero-number">10.957</span>
+                            <span class="hero-label">Inquéritos movimentados</span>
                         </div>
-                        <div class="stat-highlight success">
-                            <div class="stat-icon">⚖️</div>
-                            <div class="stat-number">8.153</div>
-                            <div class="stat-label">Denúncias Oferecidas</div>
-                        </div>
-                        <div class="stat-highlight info">
-                            <div class="stat-icon">📋</div>
-                            <div class="stat-number">168</div>
-                            <div class="stat-label">Arquivamentos</div>
+                        <div class="hero-bars">
+                            <div class="hero-bar">
+                                <div class="hero-bar-label">
+                                    <span>Denúncias oferecidas</span>
+                                    <span class="hero-value">8.153</span>
+                                </div>
+                                <div class="mini-bar">
+                                    <div class="mini-fill success" style="--bar-width: 74.4%"></div>
+                                </div>
+                                <span class="hero-percentage">74,4% do total</span>
+                            </div>
+                            <div class="hero-bar">
+                                <div class="hero-bar-label">
+                                    <span>Requisitórios emitidos</span>
+                                    <span class="hero-value">451</span>
+                                </div>
+                                <div class="mini-bar">
+                                    <div class="mini-fill warning" style="--bar-width: 4.1%"></div>
+                                </div>
+                                <span class="hero-percentage">4,1% do total</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="stats-secondary">
-                        <h3>Requisitórios</h3>
-                        <div class="requisitorios-grid">
-                            <div class="req-item">
-                                <div class="req-bar">
-                                    <div class="req-fill" style="width: 100%"></div>
-                                </div>
-                                <div class="req-info">
-                                    <span class="req-label">Solicitados</span>
-                                    <span class="req-value">451</span>
-                                </div>
+                    <div class="infographic-cards">
+                        <div class="metric-card success">
+                            <div class="metric-header">
+                                <span class="metric-title">Conversão em denúncia</span>
+                                <span class="metric-chip">74,4%</span>
                             </div>
-                            <div class="req-item">
-                                <div class="req-bar">
-                                    <div class="req-fill responded" style="width: 48%"></div>
-                                </div>
-                                <div class="req-info">
-                                    <span class="req-label">Respondidos</span>
+                            <p class="metric-number">8.153 casos</p>
+                            <p class="metric-description">Fluxo majoritário segue para denúncia tradicional, evidenciando efetividade na fase pré-processual.</p>
+                        </div>
+
+                        <div class="metric-card info">
+                            <div class="metric-header">
+                                <span class="metric-title">Requisitórios emitidos</span>
+                                <span class="metric-chip">451</span>
+                            </div>
+                            <p class="metric-number small">4,1% do total</p>
+                            <p class="metric-description">Volume direcionado para diligências complementares; monitoramento evita gargalos de resposta.</p>
+                        </div>
+
+                        <div class="metric-card warning">
+                            <div class="metric-header">
+                                <span class="metric-title">Requisitórios</span>
+                                <span class="metric-chip">451 emitidos</span>
+                            </div>
+                            <div class="req-progress">
+                                <div class="req-progress-item">
+                                    <span>Respondidos</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-fill success" style="--bar-width: 48%"></div>
+                                    </div>
                                     <span class="req-value">217</span>
                                 </div>
-                            </div>
-                            <div class="req-item">
-                                <div class="req-bar">
-                                    <div class="req-fill pending" style="width: 52%"></div>
-                                </div>
-                                <div class="req-info">
-                                    <span class="req-label">Pendentes</span>
+                                <div class="req-progress-item">
+                                    <span>Pendentes</span>
+                                    <div class="mini-bar">
+                                        <div class="mini-fill pending" style="--bar-width: 52%"></div>
+                                    </div>
                                     <span class="req-value">234</span>
                                 </div>
                             </div>
+                            <p class="metric-description">Metade do volume ainda aguarda retorno, reforçando a necessidade de acompanhamento ativo.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="stats-note">
-                        <p><strong>OBS:</strong> Os dados de Requisitórios são baseados em movimentos lançados pelo usuário nos sistemas extrajudiciais criminais, visto que ainda não foi implementada rotina automática de envio e recepção destes requisitórios.</p>
-                    </div>
+                <div class="infographic-note">
+                    <strong>Observação:</strong> os dados de requisitórios consideram lançamentos manuais nos sistemas extrajudiciais criminais; rotina automática de envio e recebimento ainda não implantada.
                 </div>
             </div>
         `
@@ -148,22 +177,22 @@ const slidesData = [
                     <p class="lead-text">O presente encontro interinstitucional tem por finalidade promover o diálogo qualificado, o alinhamento estratégico e o fortalecimento da cooperação entre membros e servidores do Ministério Público de Pernambuco e Delegados da Polícia Civil de Pernambuco.</p>
                     <div class="objectives-grid">
                         <div class="objective-card">
-                            <div class="objective-icon">🎯</div>
+                            <div class="objective-icon">⚙️</div>
                             <h3>Aprimorar Fluxos</h3>
                             <p>Otimização dos processos de trabalho conjunto</p>
                         </div>
                         <div class="objective-card">
-                            <div class="objective-icon">📋</div>
+                            <div class="objective-icon">🧭</div>
                             <h3>Padronizar Práticas</h3>
                             <p>Uniformização de procedimentos institucionais</p>
                         </div>
                         <div class="objective-card">
-                            <div class="objective-icon">🤝</div>
+                            <div class="objective-icon">📊</div>
                             <h3>Compartilhar Diagnósticos</h3>
                             <p>Troca de informações e experiências</p>
                         </div>
                         <div class="objective-card">
-                            <div class="objective-icon">⚡</div>
+                            <div class="objective-icon">🌟</div>
                             <h3>Identificar Melhorias</h3>
                             <p>Oportunidades de aperfeiçoamento contínuo</p>
                         </div>
@@ -213,7 +242,7 @@ const slidesData = [
                 <div class="content-box">
                     <div class="culture-pillars">
                         <div class="pillar">
-                            <div class="pillar-icon">🔗</div>
+                            <div class="pillar-icon">🤝</div>
                             <h3>Integração</h3>
                             <p>Trabalho conjunto e articulado entre as instituições</p>
                         </div>
@@ -223,7 +252,7 @@ const slidesData = [
                             <p>Clareza nos processos e comunicação aberta</p>
                         </div>
                         <div class="pillar">
-                            <div class="pillar-icon">⚙️</div>
+                            <div class="pillar-icon">⚡</div>
                             <h3>Eficiência</h3>
                             <p>Respostas céleres, técnicas e coordenadas</p>
                         </div>
@@ -248,7 +277,7 @@ const slidesData = [
                         <h3>Funções Principais</h3>
                         <div class="function-grid">
                             <div class="function-card">
-                                <div class="function-icon">📨</div>
+                                <div class="function-icon">📥</div>
                                 <p>Receber comunicações de prisão em flagrante</p>
                             </div>
                             <div class="function-card">
@@ -256,11 +285,11 @@ const slidesData = [
                                 <p>Representar ao juiz requerendo prisões</p>
                             </div>
                             <div class="function-card">
-                                <div class="function-icon">📋</div>
+                                <div class="function-icon">🧾</div>
                                 <p>Formular medidas processuais</p>
                             </div>
                             <div class="function-card">
-                                <div class="function-icon">🔍</div>
+                                <div class="function-icon">🗂️</div>
                                 <p>Requerer peças de informação</p>
                             </div>
                         </div>
@@ -434,7 +463,7 @@ const slidesData = [
                 <div class="title-content">
                     <h1 class="main-title" style="font-size: 3.5rem; margin-bottom: 2rem;">Juntos por uma Justiça Criminal mais Eficiente</h1>
                     <div class="title-decoration"></div>
-                    <p class="title-description" style="font-size: 2rem; font-weight: 600;">MPPE • PCPE</p>
+                    <p class="title-description" style="font-size: 2rem; font-weight: 600;">MPPE × PCPE</p>
                 </div>
             </div>
         `
@@ -452,4 +481,3 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.appendChild(section);
     });
 });
-
