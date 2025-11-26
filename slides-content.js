@@ -104,7 +104,7 @@ const slidesData = [
                                     <span class="req-value">234</span>
                                 </div>
                             </div>
-                            <p class="metric-description">Metade do volume ainda aguarda retorno, reforçando a necessidade de acompanhamento ativo.</p>
+                            <p class="metric-description">Mais da metade do volume ainda aguarda retorno, reforçando a necessidade de acompanhamento ativo.</p>
                         </div>
                     </div>
                 </div>
