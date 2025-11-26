@@ -478,7 +478,7 @@ const slidesData = [
                             </div>
                             <div class="contact-item">
                                 <span class="contact-dot"></span>
-                                <span>Orientacões gerais</span>
+                                <span>Orientações gerais</span>
                             </div>
                         </div>
                     </div>
