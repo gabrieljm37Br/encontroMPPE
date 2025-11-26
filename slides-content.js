@@ -22,6 +22,127 @@ const slidesData = [
         id: 2,
         html: `
             <div class="slide-content">
+                <h2 class="slide-title">Dados da Central de Inquéritos da Capital</h2>
+                <div class="content-box">
+                    <div class="stats-period">
+                        <p>📊 Período: <strong>01/01/2025 a 25/11/2025</strong></p>
+                    </div>
+                    
+                    <div class="stats-highlight-grid">
+                        <div class="stat-highlight primary">
+                            <div class="stat-icon">📁</div>
+                            <div class="stat-number">10.957</div>
+                            <div class="stat-label">Inquéritos Movimentados</div>
+                        </div>
+                        <div class="stat-highlight success">
+                            <div class="stat-icon">⚖️</div>
+                            <div class="stat-number">8.153</div>
+                            <div class="stat-label">Denúncias Oferecidas</div>
+                        </div>
+                        <div class="stat-highlight info">
+                            <div class="stat-icon">📋</div>
+                            <div class="stat-number">168</div>
+                            <div class="stat-label">Arquivamentos</div>
+                        </div>
+                    </div>
+
+                    <div class="stats-secondary">
+                        <h3>Requisitórios</h3>
+                        <div class="requisitorios-grid">
+                            <div class="req-item">
+                                <div class="req-bar">
+                                    <div class="req-fill" style="width: 100%"></div>
+                                </div>
+                                <div class="req-info">
+                                    <span class="req-label">Solicitados</span>
+                                    <span class="req-value">451</span>
+                                </div>
+                            </div>
+                            <div class="req-item">
+                                <div class="req-bar">
+                                    <div class="req-fill responded" style="width: 48%"></div>
+                                </div>
+                                <div class="req-info">
+                                    <span class="req-label">Respondidos</span>
+                                    <span class="req-value">217</span>
+                                </div>
+                            </div>
+                            <div class="req-item">
+                                <div class="req-bar">
+                                    <div class="req-fill pending" style="width: 52%"></div>
+                                </div>
+                                <div class="req-info">
+                                    <span class="req-label">Pendentes</span>
+                                    <span class="req-value">234</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-note">
+                        <p><strong>OBS:</strong> Os dados de Requisitórios são baseados em movimentos lançados pelo usuário nos sistemas extrajudiciais criminais, visto que ainda não foi implementada rotina automática de envio e recepção destes requisitórios.</p>
+                    </div>
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 3,
+        html: `
+            <div class="slide-content">
+                <h2 class="slide-title">Visão Geral dos Dados</h2>
+                <div class="content-box">
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar-item">
+                                <div class="bar-label-wrapper">
+                                    <span class="bar-label">Inquéritos Movimentados</span>
+                                    <span class="bar-value">10.957</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 100%" data-color="primary">
+                                        <span class="bar-percentage">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bar-item">
+                                <div class="bar-label-wrapper">
+                                    <span class="bar-label">Denúncias Oferecidas</span>
+                                    <span class="bar-value">8.153</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 74.4%" data-color="success">
+                                        <span class="bar-percentage">74,4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bar-item">
+                                <div class="bar-label-wrapper">
+                                    <span class="bar-label">Requisitórios Solicitados</span>
+                                    <span class="bar-value">451</span>
+                                </div>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 4.1%" data-color="warning">
+                                        <span class="bar-percentage">4,1%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-legend">
+                            <p><strong>Base de cálculo:</strong> Inquéritos Movimentados (10.957)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 4,
+        html: `
+            <div class="slide-content">
                 <h2 class="slide-title">Objetivo do Encontro</h2>
                 <div class="content-box">
                     <p class="lead-text">O presente encontro interinstitucional tem por finalidade promover o diálogo qualificado, o alinhamento estratégico e o fortalecimento da cooperação entre membros e servidores do Ministério Público de Pernambuco e Delegados da Polícia Civil de Pernambuco.</p>
@@ -52,7 +173,7 @@ const slidesData = [
         `
     },
     {
-        id: 3,
+        id: 5,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Áreas de Atuação Conjunta</h2>
@@ -85,7 +206,7 @@ const slidesData = [
         `
     },
     {
-        id: 4,
+        id: 6,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Consolidação de Cultura Institucional</h2>
@@ -115,7 +236,7 @@ const slidesData = [
         `
     },
     {
-        id: 5,
+        id: 7,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Centrais de Inquérito - MPPE</h2>
@@ -152,7 +273,7 @@ const slidesData = [
         `
     },
     {
-        id: 6,
+        id: 8,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Fluxo de Procedimentos na CIC</h2>
@@ -206,7 +327,7 @@ const slidesData = [
         `
     },
     {
-        id: 7,
+        id: 9,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Núcleos - NPP e NANPP</h2>
@@ -249,7 +370,7 @@ const slidesData = [
         `
     },
     {
-        id: 8,
+        id: 10,
         html: `
             <div class="slide-content">
                 <h2 class="slide-title">Controle e Comunicação</h2>
@@ -279,7 +400,7 @@ const slidesData = [
                                     <li>SEI</li>
                                     <li>SIM</li>
                                     <li>E-MAIL</li>
-                                    <li>Dje</li>
+                                    <li>PJe</li>
                                 </ul>
                             </div>
                             <div class="partner-detail">
@@ -307,7 +428,7 @@ const slidesData = [
         `
     },
     {
-        id: 9,
+        id: 11,
         html: `
             <div class="slide-content title-slide">
                 <div class="title-content">
