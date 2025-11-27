@@ -314,11 +314,11 @@ const slidesData = [
                                 <h3>Entrada de Autos</h3>
                             </div>
                             <div class="step-content">
-                                <p><strong>O que chega:</strong></p>
+                                <p style="font-size:18px;"><strong>O que chega:</strong></p>
                                 <ul>
-                                    <li>Comunicações de prisão em flagrante</li>
-                                    <li>Autos de inquérito, TCO, peças de informação</li>
-                                    <li>Integração via PJe, SIM, Consensus, E-mail</li>
+                                    <li style="font-size:18px;">Comunicações de prisão em flagrante</li>
+                                    <li style="font-size:18px;">Autos de inquérito, TCO, peças de informação</li>
+                                    <li style="font-size:18px;">Integração via PJe, SIM, Consensus, E-mail</li>
                                 </ul>
                             </div>
                         </div>
@@ -328,12 +328,12 @@ const slidesData = [
                                 <h3>Triagem</h3>
                             </div>
                             <div class="step-content">
-                                <p><strong>Objetivo:</strong> Classificar e qualificar cada procedimento</p>
+                                <p style="font-size:18px;"><strong>Objetivo:</strong> Classificar e qualificar cada procedimento</p>
                                 <ul>
-                                    <li>Verificação de atribuição</li>
-                                    <li>Completude de dados</li>
-                                    <li>Status do investigado (preso/solto)</li>
-                                    <li>Verificação de prevenção</li>
+                                    <li style="font-size:18px;">Verificação de atribuição</li>
+                                    <li style="font-size:18px;">Completude de dados</li>
+                                    <li style="font-size:18px;">Status do investigado (preso/solto)</li>
+                                    <li style="font-size:18px;">Verificação de prevenção</li>
                                 </ul>
                             </div>
                         </div>
@@ -344,9 +344,9 @@ const slidesData = [
                             </div>
                             <div class="step-content">
                                 <ul>
-                                    <li>Cadastro no Consensus</li>
-                                    <li>Vinculação a autos anteriores</li>
-                                    <li>Distribuição ao NPP ou NANPP</li>
+                                    <li style="font-size:18px;">Cadastro no Consensus</li>
+                                    <li style="font-size:18px;">Vinculação a autos anteriores</li>
+                                    <li style="font-size:18px;">Distribuição ao NPP ou NANPP</li>
                                 </ul>
                             </div>
                         </div>
