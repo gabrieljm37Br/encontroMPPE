@@ -54,6 +54,20 @@
                     </path>
                 </svg>
             </button>
+            <div class="zoom-controls" aria-label="Controles de zoom">
+                <button id="zoomOutBtn" class="nav-btn" aria-label="Diminuir zoom" title="Diminuir zoom (-)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+                <span id="zoomValue" class="zoom-value" aria-live="polite">100%</span>
+                <button id="zoomInBtn" class="nav-btn" aria-label="Aumentar zoom" title="Aumentar zoom (+)">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
             <button id="nextBtn" class="nav-btn" aria-label="Próximo slide">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 18 15 12 9 6"></polyline>
@@ -69,7 +83,9 @@
             <span>Central de Inquéritos da Capital</span>
         </div>
 
-        <div class="slides-wrapper" id="slidesWrapper"></div>
+        <div class="slides-viewport">
+            <div class="slides-wrapper" id="slidesWrapper"></div>
+        </div>
     </div>
 
     <script src="./slides-content.js"></script>

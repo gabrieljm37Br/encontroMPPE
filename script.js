@@ -6,6 +6,9 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const currentSlideEl = document.getElementById('currentSlide');
 const progressFill = document.getElementById('progressFill');
+const zoomInBtn = document.getElementById('zoomInBtn');
+const zoomOutBtn = document.getElementById('zoomOutBtn');
+const zoomValueEl = document.getElementById('zoomValue');
 
 function updateSlide(newSlide) {
     // Circular navigation: wrap around if out of bounds
@@ -70,11 +73,25 @@ document.addEventListener('keydown', (e) => {
     } else if (e.key === 'f' || e.key === 'F') {
         e.preventDefault();
         toggleFullscreen();
+    } else if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        changeZoom(ZOOM_STEP);
+    } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        changeZoom(-ZOOM_STEP);
+    } else if (e.key === '0') {
+        e.preventDefault();
+        zoomLevel = 1;
+        applyZoom();
     }
 });
 
 // Fullscreen functionality
 const fullscreenBtn = document.getElementById('fullscreenBtn');
+const MIN_ZOOM = 0.7;
+const MAX_ZOOM = 1.6;
+const ZOOM_STEP = 0.1;
+let zoomLevel = 1;
 
 function toggleFullscreen() {
     if (!document.fullscreenElement) {
@@ -105,6 +122,23 @@ fullscreenBtn.addEventListener('click', toggleFullscreen);
 
 document.addEventListener('fullscreenchange', updateFullscreenButton);
 
+function applyZoom() {
+    document.documentElement.style.setProperty('--zoom-level', zoomLevel);
+    zoomValueEl.textContent = `${Math.round(zoomLevel * 100)}%`;
+    zoomOutBtn.disabled = zoomLevel <= MIN_ZOOM;
+    zoomInBtn.disabled = zoomLevel >= MAX_ZOOM;
+}
+
+function changeZoom(delta) {
+    const nextZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, +(zoomLevel + delta).toFixed(2)));
+    if (nextZoom === zoomLevel) return;
+    zoomLevel = nextZoom;
+    applyZoom();
+}
+
+zoomInBtn.addEventListener('click', () => changeZoom(ZOOM_STEP));
+zoomOutBtn.addEventListener('click', () => changeZoom(-ZOOM_STEP));
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -130,3 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalSlidesEl = document.getElementById('totalSlides');
     totalSlidesEl.textContent = totalSlides;
 });
+
+// Initialize zoom UI state
+applyZoom();
